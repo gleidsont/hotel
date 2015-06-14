@@ -17,7 +17,7 @@
     <body  class="center clearfix">
 
         <header id="header">
-            <h1>Hotel Brasilia Plaza</h1>
+            <h1><a href="index.php">Hotel Brasilia Plaza</a></h1>
             <nav class="main-nav">
                 <ul>
                     <!-- inser more links here -->
@@ -32,7 +32,7 @@
                     <li><a href="servicos.php">Serviços</a></li>
                     <li><a href="galeria.php">Acomodações</a></li>
                     <li><a href="contato.php">Contato</a></li> 
-                    <li><a href="reserva.php">Reserva</a></li>
+<!--                    <li><a href="reserva.php">Reserva</a></li>-->
                     <!--                 <li class="active"><a href="reserva.php">Faça a sua Reserva</a></li>     -->                   
                 </ul>
             </nav>

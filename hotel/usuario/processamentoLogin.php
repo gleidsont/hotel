@@ -1,19 +1,25 @@
 <?php
 
-include_once '../conexao.php';
-
 $login = $_POST['login'];
 $entrar = $_POST['entrar'];
 $senha = $_POST['senha'];
 
-$conexao = new Conexao();
+$con= mysqli_connect("localhost","root","","mydb");
+if (mysqli_connect_errno()) {
+    echo "Erro ao se conectar com banco de dados: " . mysqli_connect_error();
+}
+
 if (isset($entrar)) {
 
-    $verifica = mysql_query($conexao->conectar(), "SELECT * FROM usuarios WHERE login = '$login' AND senha = '$senha'") or die("erro ao selecionar");
+    $verifica = mysqli_query($con , "SELECT * FROM usuarios WHERE login = '$login' AND senha = '$senha'") or die("erro ao selecionar");
     $t = 0;
     while ($row = mysqli_fetch_array($verifica)) {
         echo "<p>Bem vindo, " . $row['login'] . ".</p>";
-        header("location: ../adm.php");
+        if ($row['nivel'] == 1) {
+            header("location: indexCliente.php");
+        }elseif($row['nivel'] == 2){
+            header("location: ../adm.php");
+        }
         $t = 1;
         echo "<a href='logout.php'>Clique aqui para sair</a>";
     }

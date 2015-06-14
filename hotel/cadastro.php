@@ -86,7 +86,7 @@ if ( !empty( $_GET['id'] ) ) {
                 <input class="form-control" id="email" name="email" type="email" value="<?php echo $usuario->getEmail(); ?>" placeholder="E-mail" required>
 
                 <label class="cd-senha" for="senha">Senha:</label>
-                <input class="form-control" id="senha" name="senha" type="text" value="<?php echo $usuario->getSenha(); ?>"  placeholder="Senha" required>
+                <input class="form-control" id="senha" name="senha" type="password" value="<?php echo $usuario->getSenha(); ?>"  placeholder="Senha" required>
 
                 <input class="botao" type="submit" value="Cadastrar">
 

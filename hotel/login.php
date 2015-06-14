@@ -22,11 +22,11 @@
         <h1 class="animated fadeIn titulo-padrao">Login</h1>
 
         <form action="usuario/processamentoLogin.php" method="post" class="lg-form">
-            <label class="cd-username" for="signup-username">Nome de usuário:</label>
+            <label class="cd-username" for="login">Nome de usuário:</label>
             <input class="form-control" id="login" name="login" type="text" placeholder="Username" required>
 
-            <label class="cd-senha" for="signup-senha">Senha:</label>
-            <input class="form-control" id="senha" name="senha" type="text"  placeholder="Senha" required>
+            <label class="cd-senha" for="senha">Senha:</label>
+            <input class="form-control" id="senha" name="senha" type="password"  placeholder="Senha" required>
 
             <input class="botao" type="submit" name="entrar" id="entrar" value="Entrar">
 
