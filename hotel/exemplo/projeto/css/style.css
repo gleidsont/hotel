@@ -1,0 +1,567 @@
+@import url(http://fonts.googleapis.com/css?family=Lora);
+
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+.container{
+	width:	1140px;
+	margin:0 auto;
+}
+
+/*FUNDO PADRÃO*/
+.fundo-padrao{
+	background-image: url(../images/fundo2.png);
+	width: 100%;
+  height: 660px;
+  position: absolute;
+}
+
+/*TÍTULO PADRÃO*/
+.titulo-padrao:before {
+	top: 0;
+	left: 0;
+}
+
+.titulo-padrao:after {
+	bottom: 0;
+	left: 0;
+}
+
+.titulo-padrao {
+	color: #000;
+	position: relative;
+	width: 600px;
+	margin: 30px auto;
+	padding: 10px;
+	text-align: center;
+	font-family: 'Lora', serif;
+}
+
+.titulo-padrao:before, h1:after {
+	content: " ";
+	display: block;
+	position: absolute;
+	height: 1px;
+	width: 100%;
+	background: #000;
+}
+
+
+/*HEADER*/
+footer span{
+	font-family: 'Lora', serif;
+	margin-left: 150px;
+	padding: 10px;
+	width: 100px;
+	margin-top: 20px;
+	position: relative;
+}
+
+/*LOGO*/
+header{
+  background-image: url(../images/fundo.jpg);
+  width: 100%;
+  padding: 5px 0;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.logo img {
+	height: 80px;
+	width: 120px;
+    margin: 0 -330px 10px 0;
+}
+
+/*MENU*/
+/*nav a{
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+nav ul{
+  background-color: #cc8f46;
+  overflow: hidden;
+  color: black;
+  text-transform: uppercase;
+  text-align: center;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s; 
+}
+
+nav ul li{
+  display: inline-block;
+  *display:inline;
+  padding: 10px;
+}
+
+nav ul li:hover{
+  background-color: #7c5321;
+}
+
+.handle{
+  width: 100%;
+  background: #7c5321;
+  text-align: left;
+  box-sizing: border-box;
+  padding: 15px 20px;
+  cursor: pointer;
+  color: white;
+  display: none;
+}*/
+
+/*CONTATO*/
+.container-contato{
+	width: 90%;
+	padding: 15px;
+	margin: 50px auto;
+}
+
+
+#contato input[type="text"],#contato input[type="email"], #contato textarea, #contato input[type="password"]{
+	display: block;
+	padding: 10px;
+	margin: 20px auto;
+	width: 70%;
+	font-size: 18px;
+	color: #777;
+  border: 1px solid #ccc;
+}
+
+#contato textarea{
+	font-size: 16px;
+}
+
+#contatot input:hover, #contato textarea:hover{
+	border: 1px solid #888;
+}
+#contato input:focus, #contato textarea:focus{
+	border: 1px solid #777;
+}
+
+
+#contato textarea{
+	max-width: 75%;
+	min-width: 75%;
+	max-height: 140px;
+	min-height: 140px;
+  resize: none;
+}
+
+#contato .enviar{
+	text-align: center;
+}
+
+#contato .enviar button[type="submit"]{
+  cursor: pointer;
+  background: #cc8f46;
+	color: #000;
+  border: none;
+	width: 90%;
+	padding: 10px 0;
+	font-size: 20px;
+	text-transform: uppercase;
+	-webkit-transition: .5s ease;
+	transition: .5s ease;
+}
+
+#contato .enviar button[type="submit"]:hover{
+	background: #341e10;
+	color:#fff;
+}
+
+#contato .enviar button[type="submit"]:focus{
+	position: relative;
+	top: 2px;
+}
+
+/*##############\*
+    ResponsivO
+\*##############*/
+
+@media screen and (min-width: 640px){
+	.container-contato{
+		width: 600px;
+	}
+
+	#contato .right,#contato .left{
+		display: block;
+	}
+
+	#contato .right{
+		float: right;
+		width: 50%;
+	}
+	#contato .left{
+		float: left;
+		width: 50%;
+	}
+	.cl{
+    clear: both;
+  }
+}
+
+
+/*LOGIN E CADASTRO
+*/
+
+.botao{
+	margin: 2em;
+	display: inline-block;
+  	width: 120px;
+  	height: 40px;
+  	font-family: 'Lora', serif;
+  	font-weight: bold;
+  	font-size: 14px;
+  	float: right;
+  	line-height: 40px;
+  	background-color: transparent;
+  	border: #341e10;
+  	-webkit-transition: all 0.5s;  
+  	transition: all 0.5s;
+  	text-align: center;
+  	text-transform: none;
+
+}
+
+.botao:hover{
+  box-shadow: 0 0 8px 4px #341e10 inset, 0 0 8px 4px #341e10;
+  border: 1px solid #cc9d64;
+  color: #341e10 ;
+}
+
+.botao a{
+	text-decoration: none;
+	color: black ;
+    text-transform: uppercase;
+    font-style: oblique;
+}
+
+
+/*CONTEUDO INDEX*/
+
+.conteudo-sobre h2{
+	font-family: 'Lora', serif;
+	margin-left: 40px;
+	margin-top: 10px;
+	color: #fff;
+}
+
+.conteudo-sobre p{
+	font-family: 'Lora', serif;
+	margin-left: 150px;
+	width: 600px;
+	margin-top: 30px;
+	color: #fff;
+	position: relative;
+}
+
+.conteudo-sobre img{
+	float:right;
+	margin-left: 150px;
+	margin-top: -250px;
+	margin-right: 50px;
+	position: relative;
+}
+
+
+/*BOTÃO MODAL*/
+
+.botao-3{
+	text-align: center;
+}
+
+.botao-3 {
+  cursor: pointer;
+  background: #341e10;
+	color: #fff;
+  border: none;
+	width: 40%;
+	padding: 10px 0;
+	font-size: 10px;
+	text-transform: uppercase;
+}
+
+
+/*GALERIA*/
+
+.tabs-nav {padding: 20px 0 0; list-style: none; text-align: center;}
+.tabs-nav li {display: inline;}
+.tabs-nav a {
+    display:inline-block;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #fff;
+ background: #cc9f67;
+  background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,0.56) 0%, #cc9f67 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(255,255,255,0.56)), color-stop(100%,#cc9f67));
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,0.56) 0%,#cc9f67 100%);
+  background: -o-radial-gradient(center, ellipse cover, rgba(255,255,255,0.56) 0%,#cc9f67 100%);
+  background: -ms-radial-gradient(center, ellipse cover, rgba(255,255,255,0.56) 0%,#cc9f67 100%);
+  background: radial-gradient(center, ellipse cover, rgba(255,255,255,0.56) 0%,#cc9f67 100%);
+  -webkit-transition: opacity 0.3s linear;
+  -moz-transition: opacity 0.3s linear;
+  -o-transition: opacity 0.3s linear;
+  -ms-transition: opacity 0.3s linear;
+  transition: opacity 0.3s linear;
+}
+  
+.tabs-nav .active {
+    background: #fff;
+    color: black;
+    margin-bottom: -1px;
+}
+
+.tab-content {
+    padding: 40px;
+}
+
+.paragrafo {
+  font-family: 'Lora', serif;
+  margin-left: 100px;
+  width: 700px;
+  margin-top: 5px;
+  color: #fff;
+  position: relative;
+  float: left;
+}
+
+.title{
+  color: #c68754;
+  margin-left: 120px;
+  margin-bottom: 30px;
+
+}
+
+/*SLIDER
+
+.tab-content img{
+  margin-left: 40px;
+
+}
+*/
+.galeria{
+float: right;
+}
+
+.galeria li{
+  float: right;
+  margin: 15px;
+  position: relative;
+  list-style-type: none;
+}
+
+.superluxo li{
+  float: right;
+  margin-left: 15px;
+  margin-right: 60px;
+  margin-top: 20px;
+  position: relative;
+  list-style-type: none;
+}
+
+.premium li{
+  float: right;
+  margin-left: 15px;
+  margin-right: 130px;
+  margin-top: 20px;
+  position: relative;
+  list-style-type: none;
+}
+
+.galeria li > a,
+.galeria li > a img{
+  display: block;
+}
+
+.galeria li > a{
+  width: 200px;
+  height: 130px;
+  position: relative;
+  padding: 10px;
+  background: #171207;
+  text-decoration: none;
+}
+
+.galeria li > a span{
+  position: absolute;
+  width: 200px;
+  height: 120px;
+  top: 10px;
+  left: 10px;
+  text-align: center;
+  line-height: 150px;
+  color: rgba(27,54,81,0.8);
+  text-shadow: 0px 1px 1px rgba(255,255,255,0.6);
+  font-size: 24px;
+  opacity: 0;
+  filter: alpha(opacity=0); /* internet explorer */
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(opacity=0)"; /*IE8*/
+  background: #cc9f67;
+  background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,0.56) 0%, #cc9f67 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(255,255,255,0.56)), color-stop(100%,#cc9f67));
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,0.56) 0%,#cc9f67 100%);
+  background: -o-radial-gradient(center, ellipse cover, rgba(255,255,255,0.56) 0%,#cc9f67 100%);
+  background: -ms-radial-gradient(center, ellipse cover, rgba(255,255,255,0.56) 0%,#cc9f67 100%);
+  background: radial-gradient(center, ellipse cover, rgba(255,255,255,0.56) 0%,#cc9f67 100%);
+  -webkit-transition: opacity 0.3s linear;
+  -moz-transition: opacity 0.3s linear;
+  -o-transition: opacity 0.3s linear;
+  -ms-transition: opacity 0.3s linear;
+  transition: opacity 0.3s linear;
+}
+.galeria li > a:hover span{
+  opacity: 1;
+  filter: alpha(opacity=99); /* internet explorer */
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(opacity=99)"; /*IE8*/
+}
+
+.lb-overlay{
+  width: 0px;
+  height: 0px;
+  position: fixed;
+  overflow: hidden;
+  left: 0px;
+  top: 0px;
+  padding: 0px;
+  z-index: 99;
+  text-align: center;
+  background: #cc9f67;
+  background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,0.56) 0%, #cc9f67 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(255,255,255,0.56)), color-stop(100%,#cc9f67));
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,0.56) 0%,#cc9f67 100%);
+  background: -o-radial-gradient(center, ellipse cover, rgba(255,255,255,0.56) 0%,#cc9f67 100%);
+  background: -ms-radial-gradient(center, ellipse cover, rgba(255,255,255,0.56) 0%,#cc9f67 100%);
+  background: radial-gradient(center, ellipse cover, rgba(255,255,255,0.56) 0%,#cc9f67 100%);
+}
+.lb-overlay > div{
+  position: relative;
+  color: rgba(27,54,81,0.8);
+  opacity: 0;
+  filter: alpha(opacity=0); /* internet explorer */
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(opacity=0)"; /*IE8*/
+  width: 550px;
+  margin: 10px auto 0px auto;
+  text-shadow: 0px 1px 1px rgba(255,255,255,0.6);
+  -webkit-transition: opacity 0.3s linear 1.3s;
+  -moz-transition: opacity 0.3s linear 1.3s;
+  -o-transition: opacity 0.3s linear 1.3s;
+  -ms-transition: opacity 0.3s linear 1.3s;
+  transition: opacity 0.3s linear 1.3s;
+}
+.lb-overlay div h3,
+.lb-overlay div p{
+  padding: 0px 20px;
+  width: 200px;
+  height: 60px;
+}
+.lb-overlay div h3{
+  font-size: 36px;
+  float: left;
+  text-align: right;
+  border-right: 1px solid rgba(27,54,81,0.4);
+}
+.lb-overlay div h3 span,
+.lb-overlay div p{
+  font-size: 16px;
+  font-family: Constantia, Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+  font-style: italic;
+}
+.lb-overlay div h3 span{
+  display: block;
+  line-height: 6px;
+}
+.lb-overlay div p{
+  text-align: right;
+  float: right;
+  width: 260px;
+}
+.lb-overlay a.lb-close{
+  background: rgba(27,54,81,0.8);
+  z-index: 1001;
+  color: #fff;
+  position: absolute;
+  top: 43px;
+  left: 50%;
+  font-size: 15px;
+  line-height: 26px;
+  text-align: center;
+  width: 50px;
+  height: 23px;
+  overflow: hidden;
+  margin-left: -25px;
+  opacity: 0;
+  filter: alpha(opacity=0); /* internet explorer */
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(opacity=0)"; /*IE8*/
+  -webkit-box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
+  box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
+  -webkit-transition: opacity 0.3s linear 1.2s;
+  -moz-transition: opacity 0.3s linear 1.2s;
+  -o-transition: opacity 0.3s linear 1.2s;
+  -ms-transition: opacity 0.3s linear 1.2s;
+  transition: opacity 0.3s linear 1.2s;
+}
+.lb-overlay img{
+  /* height: 100%; For Opera max-height does not seem to work */
+  max-height: 100%;
+  position: relative;
+  -webkit-box-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+  -moz-box-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+  box-shadow: 0px 2px 7px rgba(0,0,0,0.2);
+}
+.lb-overlay:target {
+  width: auto;
+  height: auto;
+  bottom: 0px;
+  right: 0px;
+  padding: 80px 100px 120px 100px;
+}
+.lb-overlay:target img {
+  -webkit-animation: fadeInScale 1.2s ease-in-out;
+  -moz-animation: fadeInScale 1.2s ease-in-out;
+  -o-animation: fadeInScale 1.2s ease-in-out;
+  -ms-animation: fadeInScale 1.2s ease-in-out;
+  animation: fadeInScale 1.2s ease-in-out;
+}
+.lb-overlay:target a.lb-close,
+.lb-overlay:target > div{
+  opacity: 1;
+  filter: alpha(opacity=99); /* internet explorer */
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(opacity=99)"; /*IE8*/
+}
+@-webkit-keyframes fadeInScale {
+  0% { -webkit-transform: scale(0.6); opacity: 0; }
+  100% { -webkit-transform: scale(1); opacity: 1; }
+}
+@-moz-keyframes fadeInScale {
+  0% { -moz-transform: scale(0.6); opacity: 0; }
+  100% { -moz-transform: scale(1); opacity: 1; }
+}
+@-o-keyframes fadeInScale {
+  0% { -o-transform: scale(0.6); opacity: 0; }
+  100% { -o-transform: scale(1); opacity: 1; }
+}
+@-ms-keyframes fadeInScale {
+  0% { -ms-transform: scale(0.6); opacity: 0; }
+  100% { -ms-transform: scale(1); opacity: 1; }
+}
+@keyframes fadeInScale {
+  0% { transform: scale(0.6); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* 
+  100% Height for Opera as the max-height seems to be ignored, not optimal for large screens 
+  http://bricss.net/post/11230266445/css-hack-to-target-opera 
+*/
+x:-o-prefocus, .lb-overlay img {
+    height: 100%;
+}
